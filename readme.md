@@ -154,33 +154,9 @@ We'll define an entity named `Note` which encompasses the following properties:
 ![Alt text](./images/cloudwatch-loggroups.png) 
 ![Alt text](./images/CloudWatch.png) 
 ## Step 9: Cleanup
-### Resource Deletion (Optional)
+### Resource Deletion 
 To circumvent unwanted AWS charges:
 1. Delete all the AWS resources formed during this guide. This includes the API, Lambda functions, DynamoDB table, roles, policies, and more.
-
-## Conclusion
-By following this guide, you'll grasp the intricacies of building a serverless REST API with AWS. Combining AWS Lambda, DynamoDB, API Gateway, and API key authentication, you're on your way to crafting a robust and scalable Notes application. With varying access levels managed via API keys, this setup serves as a comprehensive blueprint for those venturing into the world of serverless applications, with a focus on best practices, efficient troubleshooting, and scalability.
-
-- Checked each CRUD operation to ensure they functioned correctly.
-- Addressed issues such as data type handling and enhanced error messaging for clarity.
-
-## 7. Authentication With API Keys
-### API Key Creation & Management
-- Generated an API key within API Gateway.
-- Created usage plans like standard-plan (e.g., 100 requests/minute) and premium-plan (e.g., 500 requests/minute).
-- Associated the API key with these plans and further linked plans to specific stages of our API.
-- Enabled API key requirements for specific routes.
-- Shared API keys with clients based on their subscription plan.
-
-## 8. Monitoring with CloudWatch
-### Logging & Metrics
-- Accessed CloudWatch to monitor both Lambda functions and the API Gateway.
-- Viewed logs to understand the flow and any errors.
-- Additionally, metrics provided insights into performance and potential bottlenecks.
-
-## 9. Cleanup
-### Resource Deletion
-- To avoid unnecessary AWS charges, deleted all AWS resources created during this project. This includes the API, Lambda functions, DynamoDB table, roles, policies, and more.
 
 ## Conclusion
 This documentation provides a step-by-step guide on creating a serverless REST API with AWS. With the integration of AWS Lambda, DynamoDB, API Gateway, and authentication using API keys, we built a robust and scalable Notes application. The system is designed to be efficient with different access levels managed via API keys. This serves as an excellent blueprint for anyone seeking to delve into serverless applications, emphasizing best practices, debugging, and scalability.
