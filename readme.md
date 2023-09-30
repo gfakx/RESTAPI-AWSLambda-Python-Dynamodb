@@ -5,6 +5,19 @@
 ## Overview
 This guide walks you through the process of constructing a serverless REST API using Python. This API encompasses the CRUD (Create, Read, Update, Delete) operations for a Notes application. The architecture is built upon AWS services, with AWS Lambda for serverless computing, DynamoDB as the NoSQL database, and API Gateway to expose our API endpoints. Python plays a pivotal role, acting as the backbone for our Lambda functions and data handling. We'll also integrate API keys to manage and restrict access to our API, ensuring differentiated access levels based on user plans.
 
+## Table of Contents
+1. [Prerequisites](#prerequisites)
+2. [Environment Setup](#step-1-setting-up-your-environment)
+3. [Data Model](#step-2-designing-the-data-model)
+4. [DynamoDB Setup](#step-3-setting-up-dynamodb)
+5. [Lambda Functions](#step-4-creating-aws-lambda-functions)
+6. [API Gateway ](#step-5-initializing-api-gateway)
+7. [API Testing](#step-6-api-testing)
+8. [Authentication with API Keys](#step-7-implementing-authentication-with-api-keys)
+9. [Monitoring with CloudWatch](#step-8-monitoring-using-cloudwatch)
+10. [Cleanup](#step-9-cleanup)
+11. [Conclusion](#conclusion)
+
 ## Prerequisites
 Before diving in, ensure you have:
 - An active AWS account.
